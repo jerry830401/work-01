@@ -1,0 +1,104 @@
+$color01:#8d8d8d;
+$color02:#4d3126;
+$color03:black;
+
+// min以上 max以下
+@media (min-width: 576px) { 
+  .container{
+    min-width: 1140px;
+  }
+}
+
+
+#header{
+  height: 100px;
+  margin: 0px 0px 20px 0px;
+  
+  #logo{    
+    span{
+      color: $color02;
+      font-size: 36px;
+      position: absolute;
+      bottom: 0px;
+    }    
+  }
+
+  #menu{
+    padding: 0px;
+    ul{
+      position: absolute;
+      bottom: 0px;
+      margin: 0px;
+      padding: 0px;      
+      li{        
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+        border-right: 1px solid $color01;
+        line-height:50%;
+        overflow:visible;
+        a{
+          color: $color01;
+        }
+      }
+      
+      li:last-of-type{
+        border-right: 0px;
+      }
+    }
+  }
+
+  #tools{
+
+    #search{
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      margin-bottom: 40px;
+    }
+
+    #tools-items{
+      ul{
+        position: absolute;
+        bottom: 0px;
+        right: -10px;
+        margin: 0px;
+        padding: 0px;        
+        li{        
+          display: inline-block;
+          padding: 0px 10px 0px 10px;
+          border-right: 1px solid $color01;
+          a{
+            color: $color03;
+            font-size: 14px;
+          }
+        }
+        li:last-of-type{
+          border-right: 0px;
+        }
+      }
+    }
+  }
+
+}
+
+#info{
+  margin: 20px 0px 0px 0px;
+  .col-1-5{
+    width: 20%;
+  }
+  .col-1-5:last-of-type{
+    border-right: 0px;
+  }
+}
+
+#gallery{
+  .row{
+    .col-4{
+      padding: 15px;
+      img{
+        width: 100%;
+      }
+    }
+  }  
+}
