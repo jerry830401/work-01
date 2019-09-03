@@ -1,4 +1,3 @@
-import config from './config'
 import $ from 'jquery'
 import 'bootstrap';
 import './index.scss'

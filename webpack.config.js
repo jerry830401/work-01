@@ -17,8 +17,8 @@ module.exports = {
       minify: {
         collapseWhitespace: true
       },
-      hash: true,
       template: './src/index.html',
+      inject: false,
     }),
   ],
   module: {
