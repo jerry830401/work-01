@@ -28,6 +28,14 @@ module.exports = {
       template: './src/introduction.html',
       inject: false,
     }),
+    new HtmlWebpackPlugin({
+      filename: 'character.html',
+      minify: {
+        collapseWhitespace: true
+      },
+      template: './src/character.html',
+      inject: false,
+    }),
   ],
   module: {
     rules: [

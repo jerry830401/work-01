@@ -20,7 +20,7 @@ $(document).ready(() => {
         <div class="col-8" id="menu">
             <ul>
                 <li><a href="introduction.html">簡介</a></li>
-                <li><a href="#">人物</a></li>
+                <li><a href="character.html">復仇者</a></li>
                 <li><a href="#">電影</a></li>
                 <li><a href="#">電視劇</a></li>            
                 <li><a href="#">道具</a></li>
