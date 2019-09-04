@@ -13,9 +13,28 @@ let array = [b1, b2, b3, s1, s2, s3]
 let gallery = array.map((item) => `<div class="col-4"><img src="${item}"/></div>`).join("")
 
 $(document).ready(() => {
-    $(".carousel").carousel({
+    $('#header').append(`
+        <div class="col-2" id="logo">
+            <a href="index.html"><span>MCU</span></a>          
+        </div>
+        <div class="col-8" id="menu">
+            <ul>
+                <li><a href="introduction.html">簡介</a></li>
+                <li><a href="#">人物</a></li>
+                <li><a href="#">電影</a></li>
+                <li><a href="#">電視劇</a></li>            
+                <li><a href="#">道具</a></li>
+            </ul>
+        </div>
+        <div class="col-2" id="tools">
+              
+        </div>
+    `)
+
+
+    $('.carousel').carousel({
         interval: 5000
     });
 
-    $('#gallery').append(`<div class="row">${gallery}</div>`)
+    // $('#gallery').append(`<div class="row">${gallery}</div>`)
 })

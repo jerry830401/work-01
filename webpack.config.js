@@ -20,6 +20,14 @@ module.exports = {
       template: './src/index.html',
       inject: false,
     }),
+    new HtmlWebpackPlugin({
+      filename: 'introduction.html',
+      minify: {
+        collapseWhitespace: true
+      },
+      template: './src/introduction.html',
+      inject: false,
+    }),
   ],
   module: {
     rules: [
