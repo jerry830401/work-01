@@ -36,6 +36,14 @@ module.exports = {
       template: './src/character.html',
       inject: false,
     }),
+    new HtmlWebpackPlugin({
+      filename: 'movie.html',
+      minify: {
+        collapseWhitespace: true
+      },
+      template: './src/movie.html',
+      inject: false,
+    }),
   ],
   module: {
     rules: [
