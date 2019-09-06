@@ -62,8 +62,18 @@ body{
   }
 }
 
-#movie{
-  padding: 15px;
+#movie_nav{
+  background-color: #4d3126;  
+  ul{
+    margin: 0 auto;
+    a{
+      color: white;
+    }
+  }
+}
+
+#movie_list{
+  padding: 30px;
   background-color: #e4ccb2;
   .row{
     div{
