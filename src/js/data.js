@@ -1,36 +1,35 @@
 
 const moviesData = [
-    { name: '鋼鐵人', img: 'iron', step: 0, id: 1 },
-    { name: '無敵浩克', img: 'hulk', step: 0, id: 2 },
-    { name: '鋼鐵人2', img: 'iron2', step: 0, id: 3 },
-    { name: '雷神索爾', img: 'thor', step: 0, id: 4 },
-    { name: '美國隊長', img: 'captain', step: 0, id: 5 },
-    { name: '復仇者聯盟', img: 'avengers', step: 0, id: 6 },
+    { name: '鋼鐵人', img: 'https://images2.imgbox.com/db/5c/qzqFxzvv_o.jpg', step: 0, id: 1 },
+    { name: '無敵浩克', img: 'https://images2.imgbox.com/c9/79/zeTfiOiL_o.jpg', step: 0, id: 2 },
+    { name: '鋼鐵人2', img: 'https://images2.imgbox.com/82/8f/IyrwKxrb_o.jpg', step: 0, id: 3 },
+    { name: '雷神索爾', img: 'https://images2.imgbox.com/ef/8d/ZFwYqiJw_o.jpg', step: 0, id: 4 },
+    { name: '美國隊長', img: 'https://images2.imgbox.com/26/36/rAOUdn85_o.jpg', step: 0, id: 5 },
+    { name: '復仇者聯盟', img: 'https://images2.imgbox.com/a8/96/KQPOHhpW_o.jpg', step: 0, id: 6 },
     // step1
-    { name: '鋼鐵人3', img: 'iron3', step: 1, id: 7 },
-    { name: '雷神索爾2', img: 'thor2', step: 1, id: 8 },
-    { name: '美國隊長2', img: 'captain2', step: 1, id: 9 },
-    { name: '星際異攻隊', img: 'galaxy', step: 1, id: 10 },
-    { name: '蟻人', img: 'ant', step: 1, id: 11 },
-    { name: '復仇者聯盟:奧創紀元', img: 'avengers2', step: 1, id: 12 },
+    { name: '鋼鐵人3', img: 'https://images2.imgbox.com/68/c7/T3FyAEXi_o.jpg', step: 1, id: 7 },
+    { name: '雷神索爾2', img: 'https://images2.imgbox.com/08/9d/Aw6jlBqz_o.jpg', step: 1, id: 8 },
+    { name: '美國隊長2', img: 'https://images2.imgbox.com/5e/42/VnE2kGDN_o.jpg', step: 1, id: 9 },
+    { name: '星際異攻隊', img: 'https://images2.imgbox.com/96/3f/s9jkBbPb_o.jpg', step: 1, id: 10 },
+    { name: '蟻人', img: 'https://images2.imgbox.com/3d/10/U664hWvs_o.jpg', step: 1, id: 11 },
+    { name: '復仇者聯盟:奧創紀元', img: 'https://images2.imgbox.com/db/97/lBqBmsaK_o.jpg', step: 1, id: 12 },
     // step2
-    { name: '美國隊長3', img: 'captain3', step: 2, id: 13 },
-    { name: '奇異博士', img: 'strange', step: 2, id: 14 },
-    { name: '星際異攻隊2', img: 'galaxy2', step: 2, id: 15 },
-    { name: '蜘蛛人:返校日', img: 'spider', step: 2, id: 16 },
-    { name: '雷神索爾3:諸神黃昏', img: 'thor3', step: 2, id: 17 },
-    { name: '黑豹', img: 'panther', step: 2, id: 18 },
-    { name: '復仇者聯盟:無限之戰', img: 'avengers3', step: 2, id: 19 },
-    { name: '蟻人與黃蜂女', img: 'ant2', step: 2, id: 20 },
-    { name: '驚奇隊長', img: 'marvel', step: 2, id: 21 },
-    { name: '復仇者聯盟:終局之戰', img: 'avengers4', step: 2, id: 22 },
-    { name: '蜘蛛人:離家日', img: 'spider2', step: 2, id: 23 },
+    { name: '美國隊長3', img: 'https://images2.imgbox.com/ca/f4/6NJsez9J_o.jpg', step: 2, id: 13 },
+    { name: '奇異博士', img: 'https://images2.imgbox.com/f3/db/H2Gsh9NZ_o.jpg', step: 2, id: 14 },
+    { name: '星際異攻隊2', img: 'https://images2.imgbox.com/9e/1b/0heBqckp_o.jpg', step: 2, id: 15 },
+    { name: '蜘蛛人:返校日', img: 'https://images2.imgbox.com/d9/f2/mA92SSdS_o.jpg', step: 2, id: 16 },
+    { name: '雷神索爾3:諸神黃昏', img: 'https://images2.imgbox.com/f1/53/K6smIE3T_o.jpg', step: 2, id: 17 },
+    { name: '黑豹', img: 'https://images2.imgbox.com/9e/86/1sTEaf5t_o.jpg', step: 2, id: 18 },
+    { name: '復仇者聯盟:無限之戰', img: 'https://images2.imgbox.com/43/23/XsxlNu6C_o.jpg', step: 2, id: 19 },
+    { name: '蟻人與黃蜂女', img: 'https://images2.imgbox.com/27/6d/bpDhCaqm_o.jpg', step: 2, id: 20 },
+    { name: '驚奇隊長', img: 'https://images2.imgbox.com/ac/17/zGA9ljsE_o.jpg', step: 2, id: 21 },
+    { name: '復仇者聯盟:終局之戰', img: 'https://images2.imgbox.com/77/cd/QBGkT6UZ_o.jpg', step: 2, id: 22 },
+    { name: '蜘蛛人:離家日', img: 'https://images2.imgbox.com/a7/95/MgB4BgOq_o.jpg', step: 2, id: 23 },
 ]
 
 const moviesInfoData = [
     {
         id: 1,
-        img:'iron',
         plot:
             `<div>
                 <p>天才發明家兼<a title="企業家" href="https://zh.wikipedia.org/wiki/%E4%BC%81%E4%B8%9A%E5%AE%B6">企業家</a><a title="鋼鐵人" href="https://zh.wikipedia.org/wiki/%E9%8B%BC%E9%90%B5%E4%BA%BA">東尼&middot;史塔克</a>擁有已故父親<a title="霍華&middot;史塔克" href="https://zh.wikipedia.org/wiki/%E9%9C%8D%E8%8F%AF%C2%B7%E5%8F%B2%E5%A1%94%E5%85%8B">霍華</a>的<span class="ilh-all" data-orig-title="史塔克工業" data-lang-code="en" data-lang-name="英語" data-foreign-title="Stark Industries"><span class="ilh-page"><a class="new" href="https://zh.wikipedia.org/w/index.php?title=%E5%8F%B2%E5%A1%94%E5%85%8B%E5%B7%A5%E6%A5%AD&amp;action=edit&amp;redlink=1">史塔克工業</a></span></span>；表面是愛國者的他，私底下卻是極度自戀自負的花花公子，藉著販售軍火的收入來逍遙自在。他與摯友兼空軍上校<a title="戰爭機器 (漫畫)" href="https://zh.wikipedia.org/wiki/%E6%88%B0%E7%88%AD%E6%A9%9F%E5%99%A8_(%E6%BC%AB%E7%95%AB)">詹姆士&middot;羅德</a>在<a title="阿富汗" href="https://zh.wikipedia.org/wiki/%E9%98%BF%E5%AF%8C%E6%B1%97">阿富汗</a>完成最新科技導彈「耶利哥」（<span lang="en">Jericho</span>）的測試，前往機場回國途中遭到一群武裝民兵襲擊。護衛隊全體陣亡後，東尼被一顆出產於自己公司的<a title="火箭推進榴彈" href="https://zh.wikipedia.org/wiki/%E7%81%AB%E7%AE%AD%E6%8E%A8%E9%80%B2%E6%A6%B4%E5%BD%88">火箭推進榴彈</a>炸傷，導彈碎片直接插進他的胸腔。許久後，東尼在一個洞穴中清醒，發現自己的胸部中央安裝一個連接汽車蓄電池的<a title="電磁鐵" href="https://zh.wikipedia.org/wiki/%E9%9B%BB%E7%A3%81%E9%90%B5">電磁鐵</a>，幫他動手術的男子<a title="何銀森" href="https://zh.wikipedia.org/wiki/%E4%BD%95%E9%93%B6%E6%A3%AE">伊申</a>解釋他身體裡的彈片插在深處而無法移除，只能靠這枚電磁鐵來避免他的心臟受損害。</p>

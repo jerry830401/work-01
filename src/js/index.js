@@ -6,7 +6,7 @@ import { moviesData, moviesInfoData } from './data.js'
 let movies = moviesData.map((item) => `
     <div class="col-xl-4 col-md-6 col-12">
         <a href="movie_info.html?id=${item.id}">
-            <img src="./img/movie/${item.img}.jpg" width="100%" >
+            <img src="${item.img}" width="100%" >
         </a>
     </div>
 `).join("")
@@ -50,6 +50,7 @@ $(document).ready(() => {
     $('#movie').append(movies)
 
 
+    // get param
 
     let url = location.href;
     let parameter = {};
@@ -63,29 +64,36 @@ $(document).ready(() => {
     }
     console.log(parameter)
 
-    // get param
+    // movie
+
     let movie_info = {}
-    for (let i = 0; i < moviesInfoData.length; i++) {
-        if (String(moviesInfoData[i].id) === parameter.id) {
-            console.log(moviesInfoData[i])
-            movie_info = moviesInfoData[i]
+    let movie_page = {}
+
+    for (let i = 0; i < moviesData.length; i++) {
+        if (String(moviesData[i].id) === parameter.id) {
+            console.log(moviesData[i])
+            movie_info = moviesData[i]
         }
     }
 
-    console.log(movie_info)
-
+    for (let i = 0; i < moviesInfoData.length; i++) {
+        if (String(moviesInfoData[i].id) === parameter.id) {
+            console.log(moviesInfoData[i])
+            movie_page = moviesInfoData[i]
+        }
+    }
 
     $('#movie_info_img').append(
-        `<img src="./img/movie/${movie_info['img']}.jpg" width="100%" ></img>`
+        `<img src="${movie_info['img']}" width="100%" ></img>`
     )
 
     $('#movie_info_plot').append(
-        `${movie_info['plot']}`
+        `${movie_page['plot']}`
     )
 
     $('#movie_info_video').append(
         `<div class="col-xl-4 col-md-6 col-12">
-            <iframe width="100%" src="${movie_info['video'][0]}"></iframe>
+            <iframe width="100%" src="${movie_page['video'][0]}"></iframe>
         </div>
         `
     )
