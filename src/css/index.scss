@@ -65,8 +65,10 @@ body{
 #movie{
   padding: 15px;
   background-color: #e4ccb2;
-  div{
-    margin: 15px 0px 15px 0px;    
-    // background-color: black;
+  .row{
+    div{
+      margin: 15px 0px 15px 0px; 
+    }
   }
+  
 }
