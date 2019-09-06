@@ -1,16 +1,18 @@
 import $ from 'jquery'
 import 'bootstrap'
 import '../css/index.scss'
-import { moviesData } from './data'
+import { moviesData, moviesInfoData } from './data.js'
 
 let movies = moviesData.map((item) => `
     <div class="col-xl-4 col-md-6 col-12">
-        <img src="./img/movie/${item.img}.jpg" width="100%">
+        <a href="movie_info.html?id=${item.id}">
+            <img src="./img/movie/${item.img}.jpg" width="100%" >
+        </a>
     </div>
 `).join("")
 
 $(document).ready(() => {
-   
+
     $('#header').append(`
         <nav class="navbar navbar-expand-sm navbar-light">
             <a class="navbar-brand" href="index.html" id="logo">MCU</a>
@@ -46,4 +48,46 @@ $(document).ready(() => {
     });
 
     $('#movie').append(movies)
+
+
+
+    let url = location.href;
+    let parameter = {};
+    if (url.indexOf('?') != -1) {
+
+        let ary = url.split('?')[1].split('&');
+
+        for (let i = 0; i <= ary.length - 1; i++) {
+            parameter[ary[i].split('=')[0]] = ary[i].split('=')[1]
+        }
+    }
+    console.log(parameter)
+
+    // get param
+    let movie_info = {}
+    for (let i = 0; i < moviesInfoData.length; i++) {
+        if (String(moviesInfoData[i].id) === parameter.id) {
+            console.log(moviesInfoData[i])
+            movie_info = moviesInfoData[i]
+        }
+    }
+
+    console.log(movie_info)
+
+
+    $('#movie_info_img').append(
+        `<img src="./img/movie/${movie_info['img']}.jpg" width="100%" ></img>`
+    )
+
+    $('#movie_info_plot').append(
+        `${movie_info['plot']}`
+    )
+
+    $('#movie_info_video').append(
+        `<div class="col-xl-4 col-md-6 col-12">
+            <iframe width="100%" src="${movie_info['video'][0]}"></iframe>
+        </div>
+        `
+    )
+
 })
