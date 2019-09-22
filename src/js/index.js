@@ -25,15 +25,10 @@ $(document).ready(() => {
                     <li class="nav-item">
                         <a class="nav-link" href="introduction.html">簡介</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="character.html">復仇者</a>
-                    </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="movie.html">電影</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">電視劇</a>
-                    </li>
+                    </li>                    
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -42,6 +37,13 @@ $(document).ready(() => {
             </div>
         </nav>    
     `)
+
+        // < li class="nav-item" >
+        //     <a class="nav-link" href="character.html">復仇者</a>
+        //             </li >
+        // <li class="nav-item">
+        //     <a class="nav-link" href="#">電視劇</a>
+        // </li>
 
     $('.carousel').carousel({
         interval: 5000
@@ -104,12 +106,12 @@ $(document).ready(() => {
 
     $('#movie_info_video').append(
 
-        movie_page['video'].map((item)=>
+        movie_page['video'].map((item) =>
             `<div class="col-xl-6 col-md-6 col-12">
                 <iframe width="100%" src="${item}" id="trailer"></iframe>
             </div>`
         )
-        
+
     )
 
 })
