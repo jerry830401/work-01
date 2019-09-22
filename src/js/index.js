@@ -102,11 +102,14 @@ $(document).ready(() => {
         `${movie_page['plot']}`
     )
 
-    // $('#movie_info_video').append(
-    //     `<div class="col-xl-4 col-md-6 col-12">
-    //         <iframe width="100%" src="${movie_page['video'][0]}"></iframe>
-    //     </div>
-    //     `
-    // )
+    $('#movie_info_video').append(
+
+        movie_page['video'].map((item)=>
+            `<div class="col-xl-6 col-md-6 col-12">
+                <iframe width="100%" src="${item}" id="trailer"></iframe>
+            </div>`
+        )
+        
+    )
 
 })
